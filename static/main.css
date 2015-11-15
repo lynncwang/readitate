@@ -46,7 +46,6 @@ p {
     font-size: 22px;
     line-height: 2;
     text-align: center;
-}
 
 ul {
     float: left;
@@ -62,7 +61,7 @@ img {
     width: 250px;
     display: block;
     margin: auto;
-}
+    height: 250px;
 
 form {
     height: 40px
