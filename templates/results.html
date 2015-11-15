@@ -19,7 +19,7 @@
 
       <div class="container" style="width: 60%; padding: 5px; background-color: lightgrey ; border-radius:25px; margin: auto;">
       {% for value in books %}
-        <div class="row"
+        <div class="row">
           <div class="col-md-8">
             <h1>{{value.title}}</h1>
             <h2>{{value.author}} </h2>
@@ -28,7 +28,7 @@
             {% if value.cover_i == 0 %}
                 <img width=100% src="https://www.discovermeteor.com/images/book.svg"> 
             {% else %}
-                <img width=100% src = "https://covers.openlibrary.org/l/id/{{value.cover_i}}-M.jpg">
+                <img class="stockimage" width=100% src = "https://covers.openlibrary.org/l/id/{{value.cover_i}}-M.jpg">
             {% endif %}
           </div>
         </div>
