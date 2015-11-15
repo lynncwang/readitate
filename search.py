@@ -20,7 +20,7 @@ def searchUrl():
         if user_input in emotion_subject_dict:
             user_subjects = emotion_subject_dict[user_input]
         else:
-            user_subjects = ['nobel_prize_winners','fiction']
+            user_subjects = ['classic','fiction']
         full_query = createUrl(user_subjects)
         resp = requests.get(full_query)
         data = json.loads(resp.text)
