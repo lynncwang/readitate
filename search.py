@@ -29,9 +29,9 @@ def searchUrl():
         for i in range(29):
             book = {}
             if 'title_suggest' in data['docs'][i]:
-                book['title'] = data['docs'][i]['title_suggest']
+                book['title'] = data['docs'][i]['title_suggest'].title()
             if 'author_name' in data['docs'][i]:
-                book['author'] = data['docs'][i]['author_name'][0]
+                book['author'] = data['docs'][i]['author_name'][0].title()
             else: book['author'] = 'Author unknown'
             if 'cover_i' in data['docs'][i]:
                 book['cover_i']=data['docs'][i]['cover_i']
