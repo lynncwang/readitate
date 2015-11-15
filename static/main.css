@@ -1,0 +1,96 @@
+
+h1 {
+    color: oldlace;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+body {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 45px;
+    background-image: url(https://s-media-cache-ak0.pinimg.com/736x/b2/75/2f/b2752f2a70dc99ba02597e000cd82969.jpg);
+
+}
+
+
+a {
+    color: oldlace;
+    display: block;
+   
+}
+
+li {
+    float: left;
+    font-size: 20px;
+    font-family: "Verdana";
+    color: white;
+    list-style-type: none;
+    margin: 0;
+    padding-right: 3em;
+    
+}
+
+table {
+    background-color: lightgrey;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    width: 800px;
+    border-spacing: 7px;
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+th {
+    font-size: 35px;
+}
+
+p {
+    font-size: 22px;
+    line-height: 2;
+}
+
+ul {
+    float: left;
+    font-size: 24px;
+    font-family: "Verdana";
+    color: white;
+    list-style-type: none;
+    margin: 0;
+    padding-right: 20em;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+}
+
+form {
+    height: 40px
+}
+
+#searchbar {
+    
+    border-style: thick;
+    border-color: white;
+    border-radius: 30px 57.5px;
+    font-size: 18px;
+    font-family: "Helvetica Neue", sans-serif;
+    color: white;
+    background:transparent url(http://i.stackoverflow.com/Content/Img/search.png) no-repeat;
+    
+    padding: 8px;
+    width:550px;
+    height:30px;
+    
+    
+}
+
+.text {
+    font-size: 30px;
+    color: white;
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+
+#imgbutton {
+    border-style: ;
+    border-color: white;
+}
