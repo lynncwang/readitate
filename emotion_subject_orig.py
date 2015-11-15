@@ -1,1 +1,0 @@
-emotion_subject_dict = {'bored': ['suburban_life','fiction']}
