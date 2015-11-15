@@ -42,7 +42,15 @@ def searchUrl():
         
 @app.route("/about")
 def hello():
-    return "hello world!"
+    return render_template('aboutus.html')
+
+@app.route("/index")
+def index():
+    return render_template('index.html')
+
+@app.route("/how")
+def how():
+    return render_template('how.html')
 
 if __name__ == "__main__":
     app.run()

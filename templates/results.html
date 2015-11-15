@@ -5,29 +5,37 @@
     <title>Your Readitate List</title>
     <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+    <link href="/static/main.css" rel="stylesheet"/>
 </head>
 
 <body>
+  <ul> <b>Readitate</b>   </ul>
+       <li><a href="/index"">Home</a></li>
+       <li><a href="/about">About Us</a></li>
+       <li><a href="/how">How It Works</a></li>
+    
+    
+        <br> <br>
+      {% for value in books %}
       <div class="container" style="padding: 5px; background-color: lightgrey ; border-radius:25px;">
-      <div class="col-md-4">
-        <img width=100% src = "https://www.discovermeteor.com/images/book.svg">
+              <div class="col-md-6">
+        <h1>{{value.title}}</h1>
+        <h2>{{value.author}} </h2>
       </div>
-      <div class="col-md-8">
-        <h1>To Kill a Mockingbird</h1>
-        <h2>By Firstname Lastname</h2>
-      </div>
-    </div>
-       <!--ACTUAL CODE
-        {% for value in books %}
-            <p> {{value.title}} </p>
-            <p> {{value.author}} </p>
+      <div class="col-md-4.row">
             {% if value.cover_i == 0 %}
-                <img src="https://www.discovermeteor.com/images/book.svg"> 
+                <img width=100% src="https://www.discovermeteor.com/images/book.svg"> 
             {% else %}
-                <img src = "https://covers.openlibrary.org/l/id/{{value.cover_i}}-M.jpg">
+                <img width=100% src = "https://covers.openlibrary.org/l/id/{{value.cover_i}}-M.jpg">
             {% endif %}
-        {% endfor %}
-        -->
+      </div>
+
+      {% endfor %}
+      </div>
+        
+            
+
+        
 </body>
  
 </html>
