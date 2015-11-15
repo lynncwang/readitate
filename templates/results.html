@@ -18,10 +18,10 @@
         <br> <br>
       {% for value in books %}
       <div class="container" style="padding: 5px; background-color: lightgrey ; border-radius:25px;">
-              <div class="col-md-6">
+        <div class="col-md-8">
         <h1>{{value.title}}</h1>
         <h2>{{value.author}} </h2>
-      </div>
+        </div>
       <div class="col-md-4.row">
             {% if value.cover_i == 0 %}
                 <img width=100% src="https://www.discovermeteor.com/images/book.svg"> 
