@@ -57,7 +57,9 @@ ul {
     padding-right: 20em;
 }
 
-
+img {
+    width: 250px;
+}
 
 form {
     height: 40px
