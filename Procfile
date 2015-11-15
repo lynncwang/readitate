@@ -1,1 +1,1 @@
-web: gunicorn readitate:app --log-file=-
+web: gunicorn search:app --log-file=-
